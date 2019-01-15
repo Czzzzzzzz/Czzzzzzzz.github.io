@@ -1,1 +1,176 @@
-hello world
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>Zheng Cao - Pessimstic Optimist</title>
+  </head>
+  <body>
+
+  	<div class="container text-center class='padding-10'">  
+  		<div class='padding-10'><img class='profile rounded-circle' src='./imgs/profile.png' /></div>
+  		<h1>Cao, Zheng</h1>
+  		<div>A pessimistic optimist / A programmer / A dancer</div>
+  	</div>
+
+  	<div class="container">
+		<nav>
+		  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+		    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+		    <a class="nav-item nav-link" id="nav-education-tab" data-toggle="tab" href="#nav-education" role="tab" aria-controls="nav-education" aria-selected="false">Education</a>
+		    <a class="nav-item nav-link" id="nav-projects-tab" data-toggle="tab" href="#nav-projects" role="tab" aria-controls="nav-projects" aria-selected="false">Projects</a>		    
+		    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+		  </div>
+		</nav>
+		<div class="tab-content" id="nav-tabContent">
+		  	<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+			  	<h1 style="padding-top:100px; padding-bottom: 20px">Welcome to Zheng's World!</h1>
+				<div>
+					I am studying at USC (University of Southern California), majoring in computer science (general). 
+				</div>		  	
+			</div>			
+		 	<div class="tab-pane fade" id="nav-education" role="tabpanel" aria-labelledby="nav-education-tab">
+		  		<div class="row padding-10" >
+		  			<div class="col-sm-8">
+				  		<div class='font-weight-bold'>
+							University of Southern California, Los Angeles, CA
+						</div>
+				  		<div>
+				  			Master of Computer Science, Computer Science
+				  		</div>
+				  		<div>
+				  		Courses: Analysis of Algorithms, Web Technologies, Machine Learning, Natural Language Processing
+				  		</div>		  				
+		  			</div>
+		  			<div class="col-sm-4">Jan. 2018 – present</div>
+		  		</div>
+		  		<div class="row padding-10" >
+		  			<div class="col-sm-8">
+				  		<div class='font-weight-bold'>
+							Xiamen University, Fujian, China
+						</div>
+				  		<div>
+				  			Bachelor of Computer Science, Software Engineering
+				  		</div>		
+		  			</div>
+		  			<div class="col-sm-4">Sep. 2013 – June 2017</div>
+		  		</div>		  		
+			</div>
+		  <div class="tab-pane fade" id="nav-projects" role="tabpanel" aria-labelledby="nav-projects-tab">
+		  		<div class="padding-10">
+			  		<div class="row" >
+			  			<div class="col-sm-8">
+					  		<div class='font-weight-bold'>
+								Text classification on Reddit titles
+							</div>
+					  		<div>
+					  			<ul>
+					  				<li>
+					  					Crawled around 20,000 titles posted on Reddit including 4 classes: science, policy, sports, education.
+					  				</li>
+					  				<li>
+										Preprocessed titles by eliminating illegal symbols and tokenizing them. Transformed sentences into word2vectors (GloVe) and fed them into models: Logistic Regression(0.88 f1 score), RNN(0.93 f1), LSTM with attention(0.95 f1), and CNN(0.90 f1).				  				
+					  				</li>
+					  			</ul>
+					  		</div>	  				
+			  			</div>
+			  			<div class="col-sm-4">
+				  			<div>LA, California</div>
+				  			<div>Nov. 2018 – Dec. 2018</div>
+			  			</div>		  			
+			  		</div>	
+					<div class="row" >
+			  			<div class="col-sm-8">
+					  		<div class='font-weight-bold'>
+								Nearby Search Application
+							</div>
+					  		<div>
+					  			<ul>
+					  				<li>
+					  					Developed application serves to search nearby places and display their detailed information by key words.
+					  				</li>
+					  				<li>
+										Developed responsive web pages with Bootstrap and Angular JS. Implemented server side with PHP, Google Maps Service, and Yelp Service and deployed it on AWS.		  				
+					  				</li>
+					  				<li>
+					  					Designed and implemented an Android version of application.
+					  				</li>
+					  			</ul>
+					  		</div>	  				
+			  			</div>
+			  			<div class="col-sm-4">
+				  			<div>LA, California</div>
+				  			<div>Mar. 2018 – May 2018</div>
+			  			</div>		  			
+			  		</div>				  				  					
+			  		<div class="row" >
+			  			<div class="col-sm-8">
+					  		<div class='font-weight-bold'>
+								Facial Attractiveness Assessment Algorithm
+							</div>
+					  		<div>
+					  			<ul>
+					  				<li>
+					  					Constructed database consisting of 2000 face images and rated each image in terms of facial attractiveness.
+					  				</li>
+					  				<li>
+										Crawled images from Google and Baidu images system by using Scrapy library. Built an online website for collecting scores internet users gave for each image in terms of attractiveness.	  				
+					  				</li>
+					  				<li>
+					  					Trained six-layer CNN model on collected dataset and achieved 0.80 score (Pearson correlation) on SCUT-FBP dataset. Extracted physical features of face and trained model using SVR, which achieved 0.65 score.
+					  				</li>
+					  			</ul>
+					  		</div>	  				
+			  			</div>
+			  			<div class="col-sm-4">
+				  			<div>Xiamen, China</div>
+				  			<div>Mar. 2017 – June 2017</div>
+			  			</div>		  			
+			  		</div>		
+					<div class="row" >
+			  			<div class="col-sm-8">
+					  		<div class='font-weight-bold'>
+								Implementation of Facial Recognition Algorithm From Scientific Paper
+							</div>
+					  		<div>
+					  			<ul>
+					  				<li>
+					  					Reviewed and implemented high-dimensional LBP and its application to face recognition from paper, Blessing of Dimensionality: High-dimensional Feature and Its Efficient Compression for Face Verification.
+					  				</li>
+					  				<li>
+										Made full use of high-dimensional LBP to capture global and local features of faces. Applied PCA to alleviate negative impact of redundant features and noise.	  				
+					  				</li>
+					  				<li>
+					  					Trained and tested model on LFW dataset and achieved 0.9 AUC.
+					  				</li>
+					  			</ul>
+					  		</div>	  				
+			  			</div>
+			  			<div class="col-sm-4">
+				  			<div>Xiamen, China</div>
+				  			<div>Mar. 2016 – June 2016</div>
+			  			</div>		  			
+			  		</div>		
+		  		</div>
+		  </div>
+		  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+		  	<div class='padding-10'><span class='font-weight-bold'>Phone</span><br/> America: (+1)2132551595 China: 18202730115</div>
+		  	<div class="padding-10"><span class='font-weight-bold'>email</span> <br/>czfightinglucky@gmail.com</div>
+		  </div>
+		</div>
+	</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
